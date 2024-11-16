@@ -31,10 +31,22 @@ function App() {
     // make your code here
     return (
         <div className="App">
-            <header>SuperFlats</header>
-            <h1>SuperFlats</h1>
+            <header>
+                <h1>SuperFlats</h1>
+            </header>
             <main>
                 <h2>Flat List</h2>
+                <ul>
+                    {flats.map((flat, index) => (
+                        <li key={flat.id}>
+                            <h3>{flat.name}</h3>
+                            <p>Location: {flat.location}</p>
+                            <p>Price: {flat.price}</p>
+                            <p>Availability: {flat.available ? 'Available' : 'Not Available'}</p>
+                            <img src={flat.image} alt={flat.name}/>
+                        </li>
+                    ))}
+                </ul>
             </main>
         </div>
     );
