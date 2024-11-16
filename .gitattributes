@@ -1,0 +1,12 @@
+# .gitattributes
+# Enforce LF line endings for all files
+# Files by hyperskill use unix line endings. I want to support this for compatibility reasons.
+# This configuration tells Git to normalize line endings to LF on check-out and commit.
+* text=auto eol=lf
+
+# Specific overrides (if needed)
+*.js eol=lf
+*.html eol=lf
+*.css eol=lf
+*.yaml eol=lf
+*.json eol=lf
