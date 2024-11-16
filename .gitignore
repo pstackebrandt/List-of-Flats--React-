@@ -106,3 +106,7 @@ sketch
 *.db
 *.db-wal
 *.db-shm
+
+# Ignore specific YAML files with Hyperskill training informations
+List of Flats (React)/**/task-info.yaml
+course-remote-info.yaml
